@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Calculator</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+<body>
+<table>
+	<tr>
+		<td colspan="5"><input type="text" id="result"</td>
+	</tr>
+    
+    <tr>
+		<td><input class="btn" type="button" value="MC" /></td>
+        <td><input class="btn" type="button" value="M+" /></td>
+        <td><input class="btn" type="button" value="M-" /></td>
+        <td><input class="btn" type="button" value="+/-" onclick="dau()"/></td>
+        <td><input class="btn" type="button" value="CE/C" onclick="reset()"/></td>
+	</tr>
+    
+	<tr>
+		<td><input class="btn" type="button" id="1" value="1" onclick="number1()" /></td>
+        <td><input class="btn" type="button" id="2" value="2" onclick="number2()"/></td>
+        <td><input class="btn" type="button" id="3" value="3" onclick="number3()"/></td>
+        <td><input class="btn" type="button" id="%" value="%" onclick="phan_tram()"/></td>
+        <td><input class="btn" type="button" id="xoa" value="<--" onclick="xoa()"/></td>
+	</tr>
+     
+    <tr>
+		<td><input class="btn" type="button" id="4" value="4" onclick="number4()"/></td>
+        <td><input class="btn" type="button" id="5" value="5" onclick="number5()"/></td>
+        <td><input class="btn" type="button" id="6" value="6" onclick="number6()"/></td>
+        <td><input class="btn" type="button" id="nhan" value="x" onclick="nhan()"/></td>
+        <td><input class="btn" type="button" id="chia" value="/" onclick="chia()"/></td>
+	</tr>
+    
+    <tr>
+		<td><input class="btn" type="button" id="7" value="7" onclick="number7()"/></td>
+        <td><input class="btn" type="button" id="8" value="8" onclick="number8()"/></td>
+        <td><input class="btn" type="button" id="9" value="9" onclick="number9()"/></td>
+        <td rowspan="2"><input style="height:64px;" class="btn" type="button" id="cong" value="+" onclick="cong()"/></td>
+        <td><input class="btn" type="button" id="tru" value="-" onclick="tru()"/></td>
+	</tr>
+      
+    <tr>
+		<td><input class="btn" type="button" id="0" value="0" onclick="number0()"/></td>
+        <td><input class="btn" type="button" id="00" value="00" onclick="number00()"/></td>
+        <td><input class="btn" type="button" id="cham" value="." onclick="cham()"/></td>
+        <td><input class="btn" type="button" id="kq" value="=" onclick="kq()"/></td>
+	</tr>
+</table>
+<script src="javascript.js"></script>
+</body>
+</html>
